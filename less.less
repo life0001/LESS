@@ -1,0 +1,12 @@
+.blm (@a: #f60) {background-color: @a+333; color:@a;}
+//.dd{.blm}
+.dd{.blm(yellow)}
+//@ab:11px;
+//.dd{border:@ab*4 solid black;}
+.box-shadow(@x:0,@y:0px,@z:10px,@color:red){
+  box-shadow:@arguments;
+  -moz-box-shadow:@arguments;
+  -webkit-box-shadow:@arguments;
+  -ms-box-shadow:@arguments;
+}
+.dd{.box-shadow(0,5px); width:50%; border-radius:41px 15px 16px 17px}
